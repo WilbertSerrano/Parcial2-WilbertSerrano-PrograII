@@ -1,21 +1,22 @@
 const paises=document.querySelectorAll('.elemento');
-//console.log(paises);
 const tarjeta=document.querySelector('#tarjeta');
-//console.log(tarjeta);
 const texto=document.querySelector('#texto');
-//console.log(texto);
 
 paises.forEach(function cadaPais(pais){
     pais.addEventListener('click', cambiarPais);
 })
 
 function cambiarPais(pais){
-    texto.innerHTML =+`
+    const titulo=pais.target.textContent;
+    const descripcion=pais.target.getAttribute('descripcion');
+    const imagen=pais.target.getAttribute('imagen');
+
+    tarjeta.setAttribute('style', `background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url('${imagen}');`);
+
+    texto.innerHTML =`
     <div id="texto">
-    <h2>${pais.target.textContent}</h2>
-    <p>${pais.target.descripcion}</p>
+    <h2>${titulo}</h2>
+    <p>${descripcion}</p>
 </div>`
     console.log(`${pais}`);
 }
-
-console.log(`${pais.target}`);
