@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+*::-moz-selection {
+  background: #3d7cce;
+  color: #fff;
+}
+
+*::selection {
+  background: #3d7cce;
+  color: #fff;
+}
+
+h1, h2 {
+  font-family: 'Sriracha', cursive;
+}
+
+.info {
+  width: 100%;
+  max-width: 1124px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info span {
+  font-size: 3rem;
+  margin: 2rem 0;
+  margin-bottom: 1rem;
+  color: #eba72a;
+}
+
+.info h1 {
+  color: #3d7cce;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #5c6166;
+  margin-bottom: 2rem;
+}
+
+.caja {
+  padding: 2rem 0;
+  background: #f2f2f2;
+}
+
+.caja .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caja .container .elemento {
+  background: #d1d6e0;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #5c6166;
+  cursor: pointer;
+  margin: 1rem;
+  -webkit-transition: ease-in-out .25s;
+  transition: ease-in-out .25s;
+}
+
+.caja .container .elemento:hover {
+  background: #bcc0c9;
+  color: #3d7cce;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0.5rem 0.5rem 1.5rem rgba(92, 97, 102, 0.25);
+          box-shadow: 0.5rem 0.5rem 1.5rem rgba(92, 97, 102, 0.25);
+}
+
+.caja .container .activo {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #3d7cce;
+  color: #fff;
+}
+
+.caja .container .activo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: #3d7cce;
+  color: #fff;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 1024px;
+  min-height: 350px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  background-size: cover !important;
+  background-position: center !important;
+  margin-bottom: 4rem;
+}
+
+.tarjeta div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjeta div h2, .tarjeta div p {
+  color: #fff;
+}
+
+.tarjeta div h2 {
+  font-size: 3rem;
+}
+
+.tarjeta div p {
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=general.css.map */
