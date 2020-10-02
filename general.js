@@ -1,11 +1,12 @@
+//Variables
 const paises=document.querySelectorAll('.elemento');
 const tarjeta=document.querySelector('#tarjeta');
 const texto=document.querySelector('#texto');
-
+//Evento
 paises.forEach(function cadaPais(pais){
-    pais.addEventListener('click', cambiarPais);
+    pais.addEventListener('click', cambiarPais);   
 })
-
+//Función
 function cambiarPais(pais){
     const titulo=pais.target.textContent;
     const descripcion=pais.target.getAttribute('descripcion');
@@ -18,5 +19,9 @@ function cambiarPais(pais){
     <h2>${titulo}</h2>
     <p>${descripcion}</p>
 </div>`
-    console.log(`${pais}`);
+
+    paises.forEach(function(botones){
+        botones.classList.remove('activo');
+    })
+    pais.target.classList.add('activo');
 }
